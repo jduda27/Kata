@@ -1,4 +1,4 @@
-package kata1
+package lskata1
 
 func Search(slice []string, key string) int {
 

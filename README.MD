@@ -16,9 +16,9 @@ For planning purposes we should kata the more complex problems more frequently t
 implement and least complex solutions.
 
 ### Search algorithms
----------------------------------------------------------------------------
-| DS & A Name   | difficulty | big-O (worst) | Frequency | Last Practiced |
-|---------------|------------|---------------|-----------|----------------|
-| Linear Search |   Easy     | O(N)          | Yearly    | 06/05/2024     |
-| Binary Search |            |               |           |                |
----------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+| DS & A Name   | difficulty | big-O (worst) | Frequency | Last Practiced | Languages |
+|---------------|------------|---------------|-----------|----------------|-----------|
+| Linear Search |   Easy     | O(N)          | Yearly    | 06/05/2024     | Go        |
+| Binary Search |   Easy     | O(log n)      | 3 Months  | 06/05/2024     | Go        |
+---------------------------------------------------------------------------------------
