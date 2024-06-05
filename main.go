@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Kata/kata1"
+	"Kata/LinearSearch/kata1"
 	"fmt"
 )
 
