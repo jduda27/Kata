@@ -8,14 +8,13 @@ the value x is in the array and what location in the array it is.
 We assume size does not matter in this instance and we are only looking for the first occurrence from the left.
 
 
-The way I would approach the problem would be to first create a method search that will take in both our array and the
-value we are trying to find, key.
+The way I would approach the problem would be to first create a method search that will take in both our array(slice) and the value we are trying to find, key.
 
-In this method we iterate over the length of the array and check if the value of the array at the current index is equal
+In this method we iterate over the length of the array and check if the value of the array at the current index is equal.
 to our desired key. If not we move forward to the next index in the array. The program returns the index of the first
-instance of the key and exits the function at said occurence.
+instance of the key and exits the function at said occurrence.
 
-This method is very dependent on the size of the input array. It's time complexity is O(N) meaning in the worst case the
+This method is very dependent on the size of the input array and since we may not know the exact size of the array and we are using Golang, we will use a silce instead. It's time complexity is O(N) meaning in the worst case the
 value is not found and it must check N values of the provided array.
 
 Questions I might ask:

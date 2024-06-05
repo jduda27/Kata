@@ -1,7 +1,13 @@
-package main
+package kata1
 
-func search(array []string, key string) int {
+func Search(slice []string, key string) int {
 
+	for i, v := range slice {
+		if v == key {
+			return i
+		}
+	}
 
+	return -1
 
 }
