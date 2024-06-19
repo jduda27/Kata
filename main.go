@@ -2,7 +2,8 @@ package main
 
 import (
 	"Kata/BinarySearch/bskata1"
-	"Kata/Excersizes/TwoCrystalBalls"
+	"Kata/BubbleSort/bubkata1"
+	//	"Kata/Excersizes/TwoCrystalBalls"
 	"Kata/LinearSearch/lskata1"
 	"fmt"
 )
@@ -20,7 +21,11 @@ func main() {
 	fmt.Printf("Kata 2 index of 10: %d\n", bskata1.Search(array2, 10))
 	fmt.Printf("Kata 2 index of 1: %d\n", bskata1.Search(array2, 1))
 
-	building := []bool{false, false, false, false, false, true, true, true, true, true}
-	fmt.Printf("Two Crystal Balls\n Optimal Drop Height: %d\n", tcb.LowestBreakingPoint(building))
+	//building := []bool{false, false, false, false, false, true, true, true, true, true}
+	//fmt.Printf("Two Crystal Balls\n Optimal Drop Height: %d\n", tcb.LowestBreakingPoint(building))
+
+	array3 := []int{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}
+	fmt.Println(array3)
+	fmt.Printf("BubbleSort\nKata 1 Sorted:\n%d\n", bubkata1.BubbleSort(array3))
 
 }
