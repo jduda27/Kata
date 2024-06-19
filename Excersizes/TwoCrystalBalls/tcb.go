@@ -1,7 +1,6 @@
 package tcb
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -11,15 +10,13 @@ func LowestBreakingPoint(building []bool) (result int) {
 	for i := 0; i < len(building); {
 
 		if building[i] && crystalBalls < 2 {
-			fmt.Println(i)
-			return i
+			return i + 1
 		}
 
 		if building[i] {
 			crystalBalls -= 1
 			if lastSafeFloor == 0 {
-				fmt.Println(i)
-				return i
+				return i + 1
 			} else {
 				i = lastSafeFloor
 			}
@@ -29,8 +26,8 @@ func LowestBreakingPoint(building []bool) (result int) {
 		if crystalBalls == 1 {
 			i += 1
 		} else {
-			i = int(math.Sqrt(float64(len(building))))
+			i = i + int(math.Sqrt(float64(len(building))))
 		}
 	}
-	return
+	return 0
 }

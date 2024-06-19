@@ -1,29 +1,28 @@
-package llkata1
+package dlkata1
 
 import (
 	"fmt"
 )
 
-type Node struct {
-	val  interface{}
-	next *Node
-}
-
 type List struct {
 	head *Node
 }
 
-func (l *List) Insert(d interface{}) {
-	list := &Node{val: d, next: nil}
+type Node struct {
+	val  interface{}
+	next *Node
+	prev *Node
+}
 
+func (l *List) Insert(d interface{}) {
 	if l.head == nil {
-		l.head = list
+		l.head = &Node{val: d, next: nil, prev: nil}
 	} else {
 		p := l.head
 		for p.next != nil {
 			p = p.next
 		}
-		p.next = list
+		p.next = &Node{val: d, next: nil, prev: p}
 	}
 }
 
